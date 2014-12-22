@@ -1,0 +1,457 @@
+/* HTML5 display reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, fieldset, label, input, textarea, {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END HTML5 display reset */
+
+/* Globals */
+html { 
+	font-size: 62.5%; 
+} 
+
+body {
+	background-color: #ececec;
+	background: url(../images/body-bg.jpg) 0 0;
+	font-family: 'HabibiRegular', 'Georgia', serif;
+	font-size: 17px;
+	font-size: 1.7rem;
+	font-weight: normal;
+	line-height: 1.62;
+	color: #635b4f;
+	padding: 1.5rem 0 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: 'Rokkitt','HelveticaNeue', 'Helvetica', sans-serif;
+  line-height: 1;
+  letter-spacing: .05rem;
+  margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1.75rem;
+}
+
+ul, menu, dir {
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+p {
+	margin: 0 0 2rem 0;
+}
+
+a {
+	text-decoration: underline;
+	color: #DC7828;
+  transition: color .25s ease-in-out;
+}
+
+a:hover {
+  color: #DB5304;
+}
+
+hr {
+	border-top: 1px solid #CCB;
+	margin: 3rem 0;
+}
+
+
+@font-face {
+    font-family: 'Brawler';
+    src: url('../fonts/Brawler.eot');
+    src: url('../fonts/Brawler.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Brawler.woff') format('woff'),
+         url('../fonts/Brawler.ttf') format('truetype'),
+         url('../fonts/Brawler.svg#Brawler') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('../fonts/Rokkitt.eot');
+    src: url('../fonts/Rokkitt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Rokkitt.woff') format('woff'),
+         url('../fonts/Rokkitt.ttf') format('truetype'),
+         url('../fonts/Rokkitt.svg#Rokkitt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HabibiRegular';
+    src: url('../fonts/Habibi-Regular-webfont.eot');
+    src: url('../fonts/Habibi-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Habibi-Regular-webfont.woff') format('woff'),
+         url('../fonts/Habibi-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Habibi-Regular-webfont.svg#HabibiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('../fonts/nexalight.eot');
+    src: url('../fonts/nexalight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexalight.woff') format('woff'),
+         url('../fonts/nexalight.woff2') format('woff2'),
+         url('../fonts/nexalight.ttf') format('truetype'),
+         url('../fonts/nexalight.svg#NexaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('../fonts/nexabold.eot');
+    src: url('../fonts/nexabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexabold.woff') format('woff'),
+         url('../fonts/nexabold.woff2') format('woff2'),
+         url('../fonts/nexabold.ttf') format('truetype'),
+         url('../fonts/nexabold.svg#NexaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/pacifico.eot');
+    src: url('../fonts/pacifico.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pacifico.woff') format('woff'),
+         url('../fonts/pacifico.woff2') format('woff2'),
+         url('../fonts/pacifico.ttf') format('truetype'),
+         url('../fonts/pacifico.svg#Pacifico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearFix {
+	clear: both;
+}
+/* END - Globals */
+
+/* BEGIN handset portrait styles! */
+
+.wrapper, .content-wrapper  {
+	margin: 0 2.5rem;
+}
+
+/* Navigation */
+nav#main-nav {
+	display: block;
+	text-align: center;
+}
+
+#logo {
+	margin: 0 auto;
+	width: 6rem;
+	height: 6rem;
+	opacity: .96;
+	transition: opacity .25s ease-in-out;
+}
+
+#logo:hover {
+  opacity: 1;
+}
+
+ul#nav-links {
+	padding: 0;
+	margin: 1.5rem 0 1.25rem 0;
+	text-align: center;
+}
+
+ul#nav-links li {
+	display: inline;
+	margin: 0 1.7rem;
+}
+
+ul#nav-links li a {
+	font-weight: normal;
+	font-family: 'Rokkitt','HelveticaNeue', 'Helvetica', sans-serif;
+	font-size: 2rem;
+	color: #938D86;
+	text-decoration: none;
+  padding: .2rem 0;
+	transition: color .2s ease-in-out, border .2s ease-in-out;
+}
+
+ul#nav-links li a:hover, ul#nav-links li a:active, ul#nav-links li a.selected {
+	color: #635b4f;
+  border-bottom: 3px solid #70685f;
+}
+/* END Navigation */
+
+hr.nav-line {
+  margin: 1rem 0 3rem 0;
+}
+
+
+/* START Content Container */
+img.full-scale {
+  width: 100%;
+  margin: 0 0 3rem 0;
+}
+
+#primary-content img {
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(255,255,255, 0.45);
+}
+
+/* END Main Content Container */
+
+/* START Secondary Content Container */
+#secondary-content p {
+	border-bottom: none;
+}
+
+#secondary-content > p.last {
+	border-bottom: hidden;
+}
+/* END Secondary Content Container */
+
+/*      Footer      */
+footer {
+	padding: 1rem 0;
+	background-color: rgba(100,90,80,0.5);
+	margin-top: 1rem;
+  text-align: center;
+  color: #edeae3;
+}
+
+.signature {
+  line-height: 1.7;
+  margin: 0 0 1rem 0;
+  color: #756B61;
+  font-family: 'Pacifico', Serif;
+  /*
+  -webkit-transform: scaleX(1.35);
+  -moz-transform: scaleX(1.35);
+  -ms-transform: scaleX(1.35);
+  -o-transform:  scaleX(1.35);
+  transform: scaleX(1.35);
+  */
+}
+
+.footer-text {
+  font-family: 'NexaLight', 'HelveticaNeue', 'Helvetica', 'Arial' Sans-serif;
+  text-decoration: none;
+}
+
+ul#social {
+	text-align: center;
+}
+
+ul#social > li {
+	display: inline-block;
+	margin-right: 3rem;
+}
+
+ul#social > li:last-child {
+  margin-right: 0;
+}
+
+ul#social > li a {
+  color: rgba(100,90,80,0.7);
+  transition: color .25s ease-in-out;
+}
+
+ul#social > li a:hover {
+  color: rgba(100,90,80,0.95);
+}
+
+
+
+/*      END Footer      */
+
+/* END handset portrait styles! */
+
+
+/* BEGIN tablet landscape and big monitor styles! */
+
+@media (min-width: 800px) {
+
+	h1 {
+	font-size: 4.25rem;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+
+	h3 {
+		font-size: 2.75rem;
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+
+	h5 {
+		font-size: 1.75rem;
+	}
+
+	.wrapper, .content-wrapper {
+    width: 65%;
+    min-width: 760px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	/* Navigation */
+
+	#logo {
+		width: 7rem;
+		height: 7rem;
+		float: left;
+		margin-right: 2rem;
+	}
+
+  nav#main-nav {
+    text-align: left;
+  }
+
+	ul#nav-links {
+		text-align: right;
+		margin: 0;
+	}
+
+	ul#nav-links li {
+		display: inline-block;
+		margin: 1.6rem 3rem;
+	}
+
+	ul#nav-links li:last-child {
+		margin-right: 0;
+	}
+
+	ul#nav-links li a {
+		font-size: 2.5rem;
+}
+
+	ul#nav-links:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+  /* END Navigation */
+
+  hr.nav-line {
+  margin: 1.5rem 0 3em 0;
+}
+
+	/* START Main Content Container */
+  .content-wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+	#primary-content {
+		float: left; 
+		width: 64%;
+		margin-right: 6%; 
+	}
+	/* END Main Content Container */
+
+	/* START Secondary Content Container */
+	#secondary-content {
+		display: inline-block;
+		width: 30%;
+	}
+
+	#secondary-content h2 {
+		font-size: 2.75rem;
+	}
+
+	#secondary-content p {
+		font-size: 1.5rem;
+		padding-bottom: 2rem;
+		border-bottom: double rgba(78, 68, 60, 0.3);
+	}
+
+	#secondary-content p.last {
+		border-bottom: none;
+	}
+
+	/* END Secondary Content Container */
+
+	/* START Footer */
+
+
+
+	/* END Footer */
+
+}/* END tablet landscape and big monitor styles! */
+
+/* Tweaks & Fixes */
+
+.top-m-0 {
+	margin-top: 0;
+}
+
+.btm-m-0 {
+	margin-bottom: 0;
+}
+
+
+/* That's all folks - High 5s all around */
+
+
+
+
+
